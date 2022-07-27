@@ -1,0 +1,62 @@
+.task {
+  display: flex;
+  border: 1px solid var(--gray-400);
+  background-color: var(--gray-500);
+  padding: 1rem;
+  align-items: top;
+  border-radius: 8px;
+  margin-bottom: .5rem;
+}
+
+.task p {
+  flex: auto;
+  color: var(--gray-100);
+  padding-right: 1rem;
+  padding-left: .8rem;
+  font-size: .875rem;
+  line-height: 1.2rem;
+}
+
+.circle {
+  display: flex;
+  color: var(--blue);
+}
+.circle:hover {
+  cursor: pointer;
+  opacity: .6;
+  transition: opacity .5s;
+}
+.checkCircle {
+  color: var(--purple-dark);
+}
+.checkCircle span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkCircle:hover {
+  cursor: pointer;
+  opacity: .6;
+  transition: opacity .5s;
+}
+.check {
+  position: absolute;
+}
+.trash {
+  display: flex;
+  color: var(--gray-300);
+}
+.trash:hover {
+  cursor: pointer;
+  opacity: .6;
+  transition: opacity .5s;
+}
+
+.task .doneText {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+/* empty circle blue */
+/* empty circle done PurpleDark */
+/* trash gray-300 */

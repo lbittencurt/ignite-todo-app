@@ -1,0 +1,40 @@
+.searchBar {
+  display: flex;
+  position: relative;
+  top: -1.6rem;
+}
+.searchBar input {
+  color: var(--gray-300);
+  background-color: var(--gray-500);
+  padding: 1em;
+  flex: 1;
+  border: 0;
+  border-radius: 8px;
+}
+.searchBar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 90px;
+  margin-left: 10px;
+  background-color: var(--blue-dark);
+  color: var(--white);
+  border: 0;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: background-color .6s;
+}
+
+.searchBar button:hover {
+  cursor: pointer;
+  opacity: .6;
+  transition: opacity .5s
+}
+
+.searchBar button:disabled {
+  color: var(--gray-300);
+  background-color: var(--blue-dark-disabled);
+  transition: background-color .6s;
+}
